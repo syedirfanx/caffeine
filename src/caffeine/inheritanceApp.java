@@ -36,14 +36,20 @@ class Product {
 	}
 }
 
+class Mobile extends Product{
+	Mobile(){
+		System.out.println("Mobile Object Constructed");
+	}
+}
+
 public class inheritanceApp {
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		/*
 		Product product = new Product();
-		System.out.println("Procuct is: " + product);
+		System.out.println("Product is: " + product);
 		
 		product.setProductDetails(101, "Sun Glass", 300);
 		
@@ -57,7 +63,9 @@ public class inheritanceApp {
 		
 		
 		product2.showProductDetails();
+		*/
 		
+		Mobile mobile = new Mobile();
 
 	}
 
