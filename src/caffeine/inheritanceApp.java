@@ -5,7 +5,7 @@ package caffeine;
 class Product {
 	
 	// Attributes
-	int id;
+	private int id;
 	String name;
 	int price;
 	
@@ -26,6 +26,14 @@ class Product {
 		System.out.println("Product name: " + name);
 		System.out.println("Product price: " + price);
 	}
+	
+	void setId(int id) {
+		this.id = id;
+	}
+	
+	int getId() {
+		return id;
+	}
 }
 
 public class inheritanceApp {
@@ -41,6 +49,14 @@ public class inheritanceApp {
 		
 		product.showProductDetails();
 		
+		Product product2 = new Product();
+		
+		product2.setId(102);
+		product2.name = "Face Cream";
+		product2.price = 500;
+		
+		
+		product2.showProductDetails();
 		
 
 	}
