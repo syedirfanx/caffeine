@@ -37,6 +37,11 @@ public class inheritanceApp {
 		Product product = new Product();
 		System.out.println("Procuct is: " + product);
 		
+		product.setProductDetails(101, "Sun Glass", 300);
+		
+		product.showProductDetails();
+		
+		
 
 	}
 
